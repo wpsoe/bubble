@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晋韵游————————一站式旅游服务平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>晋韵游————————一站式旅游服务平台</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#hotels">酒店预订</a></li>
+                <li><a href="#tickets">门票预订</a></li>
+                <li><a href="#transport">交通预订</a></li>
+                <li><a href="#shop">文创商城</a></li>
+                <li><a href="#community">用户社区</a></li>
+                <li><a href="#events">活动中心</a></li>
+                <li><a href="#checkin">签到</a></li>
+                <li><a href="#profile">我的</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 首页 -->
+        <section id="home">
+            <h1>探索山西，领略华夏文明</h1>
+            <p>山西，华夏文明的发祥地之一，拥有丰富的历史文化遗产和壮丽的自然景观。</p>
+            <button onclick="window.location.href='#destinations'">查看热门景点</button>
+        </section>
+
+        <!-- 酒店预订 -->
+        <section id="hotels">
+            <h2>酒店预订</h2>
+            <form id="hotel-search">
+                <label for="destination">目的地：</label>
+                <input type="text" id="destination" name="destination" required>
+                <br>
+                <label for="checkin">入住日期：</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <br>
+                <label for="checkout">退房日期：</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <br>
+                <button type="submit">搜索酒店</button>
+            </form>
+        </section>
+
+        <!-- 门票预订 -->
+        <section id="tickets">
+            <h2>门票预订</h2>
+            <form id="ticket-search">
+                <label for="ticket-destination">目的地：</label>
+                <input type="text" id="ticket-destination" name="ticket-destination" required>
+                <br>
+                <label for="ticket-date">日期：</label>
+                <input type="date" id="ticket-date" name="ticket-date" required>
+                <br>
+                <button type="submit">搜索门票</button>
+            </form>
+        </section>
+
+        <!-- 交通预订 -->
+        <section id="transport">
+            <h2>交通预订</h2>
+            <form id="transport-search">
+                <label for="from">出发地：</label>
+                <input type="text" id="from" name="from" required>
+                <br>
+                <label for="to">目的地：</label>
+                <input type="text" id="to" name="to" required>
+                <br>
+                <label for="departure">出发日期：</label>
+                <input type="date" id="departure" name="departure" required>
+                <br>
+                <button type="submit">搜索交通</button>
+            </form>
+        </section>
+
+        <!-- 文创商城 -->
+        <section id="shop">
+            <h2>文创商城</h2>
+            <div class="product-card">
+                <img src="https://img.alicdn.com/bao/uploaded/i2/2215894332047/O1CN01IbUu3r1QzZlp1Zjn8_!!4611686018427384463-0-item_pic.jpg" alt="文创产品1">
+                <h3>莲花小佛玩偶</h3>
+                <p>山西大同文创云冈石窟佛小伴娃娃</p>
+                <button>查看详情</button>
+            </div>
+            <div class="product-card">
+                <img src="https://img.alicdn.com/bao/uploaded/O1CN01DT5J991dyjzq4kd9X_!!6000000003805-0-yinhe.jpg" alt="文创产品2">
+                <h3>金属冰箱贴</h3>
+                <p>大同金属冰箱贴九龙壁悬空寺云冈石窟磁性贴旅游文创纪念品2024款</p>
+                <button>查看详情</button>
+            </div>
+        </section>
+
+        <!-- 用户社区 -->
+        <section id="community">
+            <h2>用户社区</h2>
+            <div class="post">
+                <h3>既见未来，为何不拜</h3>
+                <p>匿名用户：来到小西天，被其中的景观所震撼，游戏和现实还是不一样啊，现实中......</p>
+                <button>查看详情</button>
+            </div>
+            <div class="post">
+                <h3>《又见平遥》太赞了吧</h3>
+                <p>匿名用户：终于来到山西看了《又见平遥》，王......</p>
+                <button>查看详情</button>
+            </div>
+        </section>
+
+        <!-- 活动中心 -->
+        <section id="events">
+            <h2>活动中心</h2>
+            <div class="event-card">
+                <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.xb0rgugdKVhc73doG6psHQHaEK?w=309&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="活动1">
+                <h3>跟着悟空游山西</h3>
+                <p>拿上通关文牒，一起跟着悟空游山西吧</p>
+                <button>查看详情</button>
+            </div>
+            <div class="event-card">
+                <img src="https://ts4.cn.mm.bing.net/th?id=OIP-C.dpwXYx7qZU3cZ32ew-83fAHaJs&w=218&h=285&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2">
+                <h3>新春旅游计划</h3>
+                <p>春节参与打卡计划，赢取文创产品</p>
+                <button>查看详情</button>
+            </div>
+        </section>
+
+        <!-- 签到界面 -->
+        <section id="checkin">
+            <h2>签到</h2>
+            <button onclick="checkIn()">签到</button>
+            <p id="checkin-status"></p>
+        </section>
+
+        <!-- 我的 -->
+        <section id="profile">
+            <h2>我的</h2>
+            <div class="profile-section">
+                <h3>个人信息</h3>
+                <p>用户名:</p><input type="text" placeholder="请输入用户名">
+                <p>密码：</p><input type="password" placeholder="请输入密码">
+                <input type="submit" value="登录">
+            </div>
+            <div class="profile-section">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 晋韵游————————一站式旅游服务平台</p>
+    </footer>
+
+    <script>
+        function checkIn() {
+            document.getElementById('checkin-status').innerText = '签到成功！';
+        }
+    </script>
+</body>
+
+</html>
